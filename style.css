@@ -60,13 +60,22 @@ h1, h3, h4, h5, p {
 }
 
 .about {
-    padding: 22px 60px 66px 60px;
+    /*padding: 20px 10px 40px 10px; */
+    padding-top: 15px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 #me_backpack {
     float: right;
     height: 20%;
     width: 20%;
+}
+
+.inner_div {
+    float: left;
+    margin: 10px;
 }
 
 header {
@@ -77,10 +86,36 @@ header {
 
 }
 
+
+/*
+Clearfix
+    Containing flaot within parent. Clearning everythign before and after
+    so that flow of page isn't affected
+*/
+
+.reference:before,
+.reference:after, {
+    content: "";
+    display: table;
+}
+
+.reference:after {
+    clear: both;
+}
+
+.reference {
+    clear: both;
+    *zoom: 1;
+    background: #eaeaed;
+}
+
 footer {
     padding-top: 3px;
     position: fixed;
     bottom: 0;
     background-color: #D8BCBC;
     color: black;
+    clear: both; /*used to clear floats --> always use AFTER */
+            /*   float is used on other objects */
+
 }
