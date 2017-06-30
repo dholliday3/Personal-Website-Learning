@@ -74,8 +74,11 @@ h1, h3, h4, h5, p {
 }
 
 .inner_div {
-    float: left;
-    margin: 10px;
+    width: 33.33%;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 2px;
+    padding-right: 2px;
 }
 
 header {
@@ -104,6 +107,7 @@ Clearfix
 }
 
 .reference {
+    display: inline-block;
     clear: both;
     *zoom: 1;
     background: #eaeaed;
@@ -115,7 +119,6 @@ footer {
     bottom: 0;
     background-color: #D8BCBC;
     color: black;
-    clear: both; /*used to clear floats --> always use AFTER */
-            /*   float is used on other objects */
-
+    /*clear: both;*/ /*used to clear floats --> always use AFTER */
+                /*   float is used on other objects */
 }
