@@ -25,10 +25,6 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 
-* {
-    background-color: rgba(0,0,0,0.1);
-}
-
 *,
 *:before,
 *:after {
@@ -52,11 +48,13 @@ h1, h3, h4, h5, p {
     border-radius: 10px;
     display: inline-block;
     margin: 0;
+    text-align: center;
 }
 
 .btn-alt {
     border: 1px solid #dfe2e5;
     padding: 10px 30px;
+    text-align: center;
 }
 
 .about {
@@ -86,14 +84,28 @@ header {
     border-color: black;
     background: #F66A6A;
     padding-top: 5px;
-
 }
 
+.header-text, .header-links {
+    text-align: right;
+}
+
+#logo {
+    float: left;
+    height: 9%;
+    width: 9%;
+    padding-bottom: 2px;
+}
+
+#nav-footer {
+    position: center;
+}
 
 /*
-Clearfix
-    Containing flaot within parent. Clearning everythign before and after
+  ========================================
+  Clearfix:  Containing flaot within parent. Clearning everythign before and after
     so that flow of page isn't affected
+  ========================================
 */
 
 .reference:before,
@@ -117,8 +129,59 @@ footer {
     padding-top: 3px;
     position: fixed;
     bottom: 0;
-    background-color: #D8BCBC;
+    background-color: rgba(232, 131, 131, 0.4);
     color: black;
     /*clear: both;*/ /*used to clear floats --> always use AFTER */
                 /*   float is used on other objects */
+}
+
+/*
+  ========================================
+  Custom styles
+  ========================================
+*/
+
+* {
+    background-color: rgba(0,0,0,0.1);
+}
+
+html {
+    color: black;
+}
+
+body {
+    font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.special {
+    font-style: italic;
+}
+
+.small_cap {
+    font-variant: small-caps;
+}
+
+#about-mii {
+    font-weight: bold;
+    font-size: 20px;
+    color: #255DF9;
+}
+
+a:hover {
+    color: #25F94F;
+}
+
+a {
+    color: blue;
+}
+
+.header-links {
+    font-family: Helvetica;
+    font-size: 20px;
+}
+
+#about-mii {
+    font-style: underline;
 }
