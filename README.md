@@ -1,2 +1,2 @@
-# Personal-Website
-Learning web development and creating a personal website. 
+# Personal-Website-Learning
+Learning web development with a simple portfilio website. 
